@@ -22,11 +22,11 @@
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Stock</label>
-                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Input product name" name="stock">
+                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Input product stock" name="stock">
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Expired at</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Input product name" name="expired_at">
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Input product expired at" name="expired_at">
                         </div>
                         <div class="mb-3">
                             <button type="submit" class="btn btn-primary">

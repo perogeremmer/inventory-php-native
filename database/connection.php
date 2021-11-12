@@ -5,8 +5,6 @@
         var $db_pass = "";
         var $db_name = "inventory";
 
-        var $conn = null;
-
         function __construct()
         {
             $this->connection = new mysqli(

@@ -27,7 +27,9 @@
                             <tr>
                                 <th scope="col ">Product Name</th>
                                 <th scope="col ">Stock</th>
+                                <th scope="col ">Expired At</th>
                                 <th scope="col ">Created At</th>
+                                <th scope="col ">Updated At</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -36,6 +38,8 @@
                                 <td><?= $item['name'] ?></td>
                                 <td><?= $item['stock'] ?></td>
                                 <td><?= $item['expired_at'] ?></td>
+                                <td><?= $item['created_at'] ?></td>
+                                <td><?= $item['updated_at'] ?></td>
                             </tr>
                             <?php } ?>
                         </tbody>
