@@ -30,6 +30,7 @@
                                 <th scope="col ">Expired At</th>
                                 <th scope="col ">Created At</th>
                                 <th scope="col ">Updated At</th>
+                                <th scope="col ">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -40,6 +41,18 @@
                                 <td><?= $item['expired_at'] ?></td>
                                 <td><?= $item['created_at'] ?></td>
                                 <td><?= $item['updated_at'] ?></td>
+                                <td>
+                                    <div class="btn-group " role="group " aria-label="Basic example ">
+                                        <a href="edit.php?id=<?= $item['id'] ?>" class="btn btn-info text-white ">
+                                            <i class="bx bx-pencil"></i>
+                                        </a>
+                                        <form onsubmit="return confirm('Do you really want to delete item?')" action="controller/inventory.php?id=<?= $item['id'] ?>&action=delete" method="POST">
+                                            <button type="submit" class="btn btn-danger text-white">
+                                                <i class="bx bx-trash"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </td>
                             </tr>
                             <?php } ?>
                         </tbody>
