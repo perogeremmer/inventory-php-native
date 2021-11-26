@@ -1,5 +1,9 @@
 <!doctype html>
 <html lang="en">
+
+<?php session_start(); ?>
+<?php include('controller/middleware.php'); ?>
+
 <head>
     <?php include('header.php') ?>
 </head>
@@ -20,6 +24,8 @@
         <div class="container mt-5">
             <div class="row mb-4">
                 <div class="col-12">
+                    <h3 class="mb-4">Halo, <?= $_SESSION['name'] ?></h5>
+
                     <h5 class="mb-4">List of Product</h5>
 
                     <table class="table table-hover ">

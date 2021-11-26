@@ -14,12 +14,8 @@
         <div class="container mt-5">
             <div class="row mb-4">
                 <div class="col-12">
-                    <h5 class="mb-4">Halaman Register</h5>
-                    <form action="controller/auth.php?action=register" method="POST">
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Input your name" name="name">
-                        </div>
+                    <h5 class="mb-4">Halaman Login</h5>
+                    <form action="controller/auth.php?action=login" method="POST">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Email</label>
                             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Input your email" name="email">
